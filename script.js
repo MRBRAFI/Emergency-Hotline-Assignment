@@ -35,6 +35,20 @@ function bitId(id1, id2) {
   console.log(coinsHere);
 }
 
+// copy counter reusablity
+
+function copyTheNumber(n){
+  const copiedText = document.getElementById(n).innerText;
+  navigator.clipboard.writeText(copiedText);
+  alert(`The number ${copiedText} is copied`);
+
+  let copyCounter = parseInt(document.getElementById("copy-counter").innerText);
+
+  copyCounter += 1;
+
+  document.getElementById("copy-counter").innerText = copyCounter;
+};
+
 // ipmlement section using eventlistener
 
 document
@@ -94,13 +108,37 @@ document
 // copy button functionality
 
 document.getElementById("copy-btn-1").addEventListener("click", function(){
-  const copiedText = document.getElementById("show-the-number1").innerText;
-  navigator.clipboard.writeText(copiedText);
-  alert(`The number ${copiedText} is copied`)
+ copyTheNumber("show-the-number1");
+})
 
-  let copyCounter = parseInt(document.getElementById("copy-counter").innerText)
+document.getElementById("copy-btn-2").addEventListener("click", function(){
+ copyTheNumber("show-the-number2");
+})
 
-  copyCounter += 1;
+document.getElementById("copy-btn-3").addEventListener("click", function(){
+ copyTheNumber("show-the-number3");
+})
 
-  document.getElementById("copy-counter").innerText = copyCounter;
+document.getElementById("copy-btn-4").addEventListener("click", function(){
+ copyTheNumber("show-the-number4");
+})
+
+document.getElementById("copy-btn-5").addEventListener("click", function(){
+ copyTheNumber("show-the-number5");
+})
+
+document.getElementById("copy-btn-6").addEventListener("click", function(){
+ copyTheNumber("show-the-number6");
+})
+
+document.getElementById("copy-btn-7").addEventListener("click", function(){
+ copyTheNumber("show-the-number7");
+})
+
+document.getElementById("copy-btn-8").addEventListener("click", function(){
+ copyTheNumber("show-the-number8");
+})
+
+document.getElementById("copy-btn-9").addEventListener("click", function(){
+ copyTheNumber("show-the-number9");
 })
