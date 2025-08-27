@@ -23,7 +23,7 @@ function bitId(id1, id2) {
   const coinsHere = parseInt(document.getElementById("coins-here").innerText);
 
   if (coinsHere >= 20) {
-    alert(`Calling ${callTheNumber} ${showTheNumber}...`);
+    alert(`📞 Calling ${callTheNumber} ${showTheNumber}...`);
 
     let deductedCoins = coinsHere - 20;
     document.getElementById("coins-here").innerText = deductedCoins;
@@ -396,7 +396,7 @@ document
       `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
     return;
    }
-   
+
     bitId("Railway-helpline", "show-the-number9");
 
     const dataOfHistory = {
