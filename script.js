@@ -22,12 +22,6 @@ function bitId(id1, id2) {
 
   const coinsHere = parseInt(document.getElementById("coins-here").innerText);
 
-  if (coinsHere < 20) {
-    alert(
-      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`
-    );
-  }
-
   if (coinsHere >= 20) {
     alert(`Calling ${callTheNumber} ${showTheNumber}...`);
 
@@ -55,8 +49,18 @@ function copyTheNumber(n){
 document
   .getElementById("Emergency-number-btn")
   .addEventListener("click", function () {
-    bitId("National-number", "show-the-number1");
 
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+    
+    bitId("National-number", "show-the-number1");
+   
+  
    const dataOfHistory = {
     serviceName : "National Emergency number",
     helpline : 999,
@@ -89,6 +93,15 @@ document
 document
   .getElementById("Police-number-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+
     bitId("Police-Helpline-Number", "show-the-number2");
 
     const dataOfHistory = {
@@ -122,6 +135,15 @@ document
 document
   .getElementById("Fire-service-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+
     bitId("Fire-service-number", "show-the-number3");
 
     const dataOfHistory = {
@@ -156,6 +178,15 @@ document
 document
   .getElementById("Ambulance-service-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+
     bitId("Ambulance-service", "show-the-number4");
 
     const dataOfHistory = {
@@ -189,6 +220,15 @@ document
 document
   .getElementById("women-child-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+   
     bitId("Women-and-child", "show-the-number5");
 
     const dataOfHistory = {
@@ -222,6 +262,15 @@ document
 document
   .getElementById("Anti-corruption-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+
     bitId("Aunty-corrupted", "show-the-number6");
 
     const dataOfHistory = {
@@ -255,6 +304,15 @@ document
 document
   .getElementById("Electricity-helpline-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+
     bitId("Electricity-outage", "show-the-number7");
 
     const dataOfHistory = {
@@ -288,6 +346,15 @@ document
 document
   .getElementById("Brac-helpline-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+
     bitId("Brac-helpline", "show-the-number8");
 
     const dataOfHistory = {
@@ -321,6 +388,15 @@ document
 document
   .getElementById("Railway-helpline-btn")
   .addEventListener("click", function () {
+
+    const coinsCounter = parseInt(document.getElementById("coins-here").innerText);
+
+   if(coinsCounter < 20){
+    alert(
+      `❌ You do not have enough coins to make the call. You need at least 20 coins to proceed...`)
+    return;
+   }
+   
     bitId("Railway-helpline", "show-the-number9");
 
     const dataOfHistory = {
